@@ -331,7 +331,7 @@ DEPENDENCIES
   kamal
   pg (~> 1.1)
   puma (>= 5.0)
-  rails (~> 8.0)
+  rails (= 8.0.1)
   rspec-rails (~> 8.0.0)
   rubocop-capybara (= 2.22.0)
   rubocop-factory_bot (!= 2.27.0)
