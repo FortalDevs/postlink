@@ -90,9 +90,7 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: postlink_production
-    username: postlink
-    password: <%= ENV["POSTLINK_DATABASE_PASSWORD"] %>
+    url: <%= ENV["POSTLINK_DATABASE_URL"] %>
   cache:
     <<: *primary_production
     database: postlink_production_cache
