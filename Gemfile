@@ -51,9 +51,10 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   # To ensure code consistency [https://docs.rubocop.org]
-  gem "rubocop-factory_bot", "!= 2.26.0", require: false
-  gem "rubocop-performance", "1.19.0"
-  gem "rubocop-rails", "2.20.2"
-  gem "rubocop-rspec", "2.23.2"
-  gem "rubocop-rspec_rails", "!= 2.29.0", require: false
+  gem "rubocop-capybara", "2.22.0", require: false
+  gem "rubocop-factory_bot", "!= 2.27.0", require: false
+  gem "rubocop-performance", "1.24.0", require: false
+  gem "rubocop-rails", "2.31.0", require: false
+  gem "rubocop-rspec", "3.5.0", require: false
+  gem "rubocop-rspec_rails", "!= 2.30.0", require: false
 end
