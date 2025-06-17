@@ -1,7 +1,7 @@
 name: "postlink"
 
 services:
-  rails-app:
+  web:
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile
@@ -20,7 +20,7 @@ services:
     depends_on:
     - postgres
 
-  postgres:
+  postlink-db:
     image: postgres:16.1
     restart: unless-stopped
     networks:
@@ -28,8 +28,8 @@ services:
     volumes:
     - postgres-data:/var/lib/postgresql/data
     environment:
-        POSTGRES_USER: <%= ENV["POSTGRES_USER"] %>
-        POSTGRES_PASSWORD: <%= ENV["POSTGRES_PASSWORD"] %>
+        POSTGRES_USER: ${POSTGRES_USER}
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
 
 volumes:
   postgres-data:
