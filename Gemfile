@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
 # Use main development branch of Rails
-gem "rails", github: "rails/rails", branch: "main"
+gem "rails", "8.0.1"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
@@ -47,4 +49,11 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  # To ensure code consistency [https://docs.rubocop.org]
+  gem "rubocop-factory_bot", "!= 2.26.0", require: false
+  gem "rubocop-performance", "1.19.0"
+  gem "rubocop-rails", "2.20.2"
+  gem "rubocop-rspec", "2.23.2"
+  gem "rubocop-rspec_rails", "!= 2.29.0", require: false
 end
