@@ -57,4 +57,7 @@ group :development, :test do
   gem "rubocop-rails", "2.31.0", require: false
   gem "rubocop-rspec", "3.5.0", require: false
   gem "rubocop-rspec_rails", "!= 2.30.0", require: false
+
+  # Test framework RSpec for Rails
+  gem "rspec-rails", "~> 8.0.0"
 end
