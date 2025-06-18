@@ -9,6 +9,7 @@
 
 # Ignore all environment files.
 /.env*
+/.devcontainer/.env
 !.env.example
 
 # Ignore all logfiles and tempfiles.

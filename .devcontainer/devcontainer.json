@@ -3,7 +3,7 @@
 {
   "name": "postlink",
   "dockerComposeFile": "compose.yaml",
-  "service": "rails-app",
+  "service": "web",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
   // Features to add to the dev container. More info: https://containers.dev/features.
