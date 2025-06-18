@@ -33,7 +33,7 @@ Layout/FirstMethodArgumentLineBreak:
 Layout/FirstMethodParameterLineBreak:
   Enabled: true
 
-Layout/LineLength
+Layout/LineLength:
   Enabled: false
 
 Layout/MultilineArrayBraceLayout:
@@ -128,4 +128,3 @@ Style/SymbolProc:
 
 Style/UnlessLogicalOperators:
   EnforcedStyle: forbid_logical_operators
-  
