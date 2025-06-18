@@ -33,6 +33,9 @@ Layout/FirstMethodArgumentLineBreak:
 Layout/FirstMethodParameterLineBreak:
   Enabled: true
 
+Layout/LineLength
+  Enabled: false
+
 Layout/MultilineArrayBraceLayout:
   EnforcedStyle: new_line
 
@@ -108,6 +111,9 @@ RSpec/BeforeAfterAll:
 RSpec/DescribeClass:
   Enabled: false
 
+RSpecRails/InferredSpecType:
+  Enabled: false
+
 Style/Documentation:
   Enabled: false
 
@@ -122,3 +128,4 @@ Style/SymbolProc:
 
 Style/UnlessLogicalOperators:
   EnforcedStyle: forbid_logical_operators
+  
