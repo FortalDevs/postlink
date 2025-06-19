@@ -2,6 +2,11 @@
 
 source "https://rubygems.org"
 
+# Devise provides support for access tokens and refresh tokens
+gem "devise", "4.9.4"
+# Devise for Rails API
+gem "devise-api", "0.2.0"
+
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
