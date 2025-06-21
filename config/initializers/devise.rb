@@ -14,7 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '88d727dfdf623953cd19eb4eea3b1ddc8590a4985892072f829321203365a0c22ed1c24508f6dff85b9c3165c1fc6b547cc0b9a066668b9c958b65172cb1743d'
+  # config.secret_key = '88d727dfdf623953cd19eb4eea3b1ddc8590a4985892072f829321203365a0c22ed1c24508f6dff85b9c3165c1fc6b547cc0b9a066668b9c958b65172cb1743d' # rubocop:disable Layout/LineLength
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -24,7 +24,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -36,7 +36,7 @@ Devise.setup do |config|
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
-  require 'devise/orm/active_record'
+  require "devise/orm/active_record"
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
@@ -126,7 +126,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '6abebea4cfdb888aab67976a3848382cd07ca57e1b9dfb4d5c12a71ea32619abade938e86e8c7a7b37dbb94d0bb8736c7c22b4a52b24a7d7055aaec0416249c9'
+  # config.pepper = '6abebea4cfdb888aab67976a3848382cd07ca57e1b9dfb4d5c12a71ea32619abade938e86e8c7a7b37dbb94d0bb8736c7c22b4a52b24a7d7055aaec0416249c9' # rubocop:disable Layout/LineLength
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
