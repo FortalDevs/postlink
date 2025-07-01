@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require "rails_helper"
 
-RSpec.describe Store, type: :model do
+RSpec.describe Store do
   subject do
     user = User.create!
     described_class.new(
