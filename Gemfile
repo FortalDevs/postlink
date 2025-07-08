@@ -58,6 +58,7 @@ group :development, :test do
   gem "rubocop-rspec", "3.5.0", require: false
   gem "rubocop-rspec_rails", "!= 2.30.0", require: false
 
+  gem "factory_bot_rails"
   # Test framework RSpec for Rails
   gem "rspec-rails", "~> 8.0.0"
   gem "shoulda-matchers"
