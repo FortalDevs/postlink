@@ -2,7 +2,7 @@
 
 RSpec.describe User do
   it "is valid with email and password" do
-    user = described_class.new(email: "a@b.com")
+    user = build(:user)
     expect(user).to be_valid
   end
 end
