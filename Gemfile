@@ -2,8 +2,13 @@
 
 source "https://rubygems.org"
 
+# Devise provides support for access tokens and refresh tokens
+gem "devise", "4.9.4"
+# Devise for Rails API
+gem "devise-api", "0.2.0"
+
 # Use postgresql as the database for Active Record
-gem "pg", "~> 1.1"
+gem "pg", "~> 1.5"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Use main development branch of Rails
@@ -45,7 +50,7 @@ group :development, :test do
   gem "bundler-audit", require: false
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
-  gem "brakeman", require: false
+  gem "brakeman", "7.1.0", require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
